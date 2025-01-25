@@ -4,17 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sticky Navbar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
 </head>
 
-<body>
-    <div class="search">
-        <input type="search" id="search-input" placeholder="Search..." class="active">
-        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
-    <script src="index.js"></script>
+<body class="bg-gray-100">
+    <header class="sticky top-0 z-50 bg-white shadow">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a href="#" class="text-xl font-bold text-gray-800">Brand</a>
+                </div>
+                <div class="hidden md:block">
+                    <ul class="flex ml-2 space-x-8">
+                        <li><a href="#" class="text-gray-800">Home</a></li>
+                        <li><a href="#" class="text-gray-800">About</a></li>
+                        <li><a href="#" class="text-gray-800">Services</a></li>
+                        <li><a href="#" class="text-gray-800">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
 </body>
 
 </html>
