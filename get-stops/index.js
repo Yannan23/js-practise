@@ -23,4 +23,3 @@ console.log(getStops([{}]));
 console.log(getStops([{}, {}]));
 console.log(getStops([{}, {}, {}]))
 
-
